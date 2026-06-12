@@ -14,11 +14,9 @@
 
 ## Demo
 
-[![Live Demo](assets/inspiration.webp)](https://reubeningber.github.io/knicks-shirt-maker/)
+https://github.com/user-attachments/assets/ae0635ae-4f87-4abc-9fd6-5e8577a3dd57
 
 **[▶ Try it live →](https://reubeningber.github.io/knicks-shirt-maker/)**
-
-> To add the screen recording: open this file on GitHub, delete these lines, and drag `assets/demo.mp4` into the editor — GitHub will host it and embed a working video player automatically.
 
 ---
 
