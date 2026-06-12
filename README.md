@@ -14,7 +14,7 @@
 
 ## Demo
 
-https://github.com/user-attachments/assets/ae0635ae-4f87-4abc-9fd6-5e8577a3dd57
+https://github.com/user-attachments/assets/66d3d7d3-a781-42ef-bbe3-19db76c26d50
 
 **[▶ Try it live →](https://reubeningber.github.io/knicks-shirt-maker/)**
 
