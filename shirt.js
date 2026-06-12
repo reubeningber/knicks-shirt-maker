@@ -158,9 +158,37 @@
     }
   }
 
+  // ── random pun ──────────────────────────────────────────────────────────────
+
+  const PUNS = [
+    'Stevie Knicks','Knickelback','Knick Jonas','Knick Jagger','Knick Cave',
+    'Knick Drake','Knicki Minaj','Knick Mason','Knick Heyward','Knick Lowe',
+    'Knick Rhodes','Knickcole Kidman','Knick Cage','Knick Offerman',
+    'Knick Cannon','Knick Kroll','Knick Nolte','Knick Frost','Knick at Nite',
+    'Knick Fury','Knick Park','Knickelodeon','Knickel & Dimed','Knick of Time',
+    'Knick Nack','Knick Carraway','Knickolas Nickleby','Knick Bottom',
+    'Knickolas Flamel','Knick Hornby','Knickolaus Copernicus',
+    'Florence Knicktingale','Knickolai Tesla','Knickolo Machiavelli',
+    'Knickolai Gogol','Knick Foles','Knick Saban','Knick Kyrgios',
+    'Knick Swisher','Knick Price','Knick Sirianni','Knick Nurse',
+    'Knick Van Exel','Saint Knick','Knick-o-lantern','Knickmas',
+    'Old Knick','Knicktionary','Dominicknicks',
+  ];
+
+  let lastPunIndex = -1;
+
+  function randomPun() {
+    let idx;
+    do { idx = Math.floor(Math.random() * PUNS.length); } while (idx === lastPunIndex);
+    lastPunIndex = idx;
+    input.value = PUNS[idx];
+    draw();
+  }
+
   // ── init ────────────────────────────────────────────────────────────────────
 
   input.addEventListener('input', draw);
+  document.querySelector('.btn-wand').addEventListener('click', randomPun);
   document.querySelector('.btn-download').addEventListener('click', downloadShirt);
   document.fonts.ready.then(draw);
   draw();
