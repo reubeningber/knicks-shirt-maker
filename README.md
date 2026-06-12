@@ -14,9 +14,9 @@
 
 ## Demo
 
-<video src="assets/demo.mov" controls width="100%"></video>
+<video src="assets/demo.mp4" controls width="100%"></video>
 
-> **Note:** If the video doesn't render above, [click here to watch the demo](assets/demo.mov).
+> **Note:** If the video doesn't render above, [click here to watch the demo](assets/demo.mp4).
 
 ---
 
