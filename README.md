@@ -29,6 +29,7 @@ Type any text and it appears on a Knicks blue t-shirt with arched orange letteri
 ## Features
 
 - **Live preview** — shirt updates as you type
+- **Random pun generator** — magic hat button fills in a random Knicks-themed name (49 puns included)
 - **Arched jersey text** — parabolic warp preserves natural font kerning (no janky character spacing)
 - **Download** — PNG on desktop, long-press save on iOS
 - **Soundtrack** — New York Groove plays on first interaction
@@ -67,7 +68,7 @@ knicks-shirt-maker/
 ├── shirt.js        # Canvas rendering + iOS-aware download
 ├── player.js       # SoundCloud widget + autoplay fallback
 └── assets/
-    ├── demo.mov
+    ├── demo.mp4
     └── inspiration.webp
 ```
 

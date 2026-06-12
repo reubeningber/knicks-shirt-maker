@@ -85,7 +85,7 @@ canvas {
 
 .text-input {
   width: 100%;
-  padding: 14px 52px 14px 18px;
+  padding: 14px 78px 14px 18px;
   font-family: var(--font-display);
   font-size: 1.1rem;
   letter-spacing: 0.1em;
@@ -113,19 +113,25 @@ canvas {
   position: absolute;
   right: 10px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(calc(-50% - 2px));
   background: none;
   border: none;
-  font-size: 1.4rem;
-  line-height: 1;
-  padding: 4px 6px;
+  padding: 0;
   cursor: pointer;
+  color: var(--orange);
   opacity: 0.8;
   transition: opacity 0.15s, transform 0.15s;
+  line-height: 0;
 }
 
-.btn-wand:hover  { opacity: 1; transform: translateY(-50%) scale(1.2); }
-.btn-wand:active { transform: translateY(-50%) scale(0.95); }
+.btn-wand svg {
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.btn-wand:hover  { opacity: 1; transform: translateY(calc(-50% - 2px)) scale(1.05); }
+.btn-wand:active { transform: translateY(calc(-50% - 2px)) scale(0.95); }
 
 .btn-download {
   display: flex;
