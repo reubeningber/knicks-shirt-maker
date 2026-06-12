@@ -1,0 +1,175 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --orange:       #f58426;
+  --orange-dark:  #d97010;
+  --blue-bg:      #0d1b2a;
+  --card-bg:      #dde3ea;
+  --input-bg:     #111d2b;
+  --border-color: #2e4258;
+  --muted:        #5a7490;
+  --footer-text:  #253545;
+  --footer-link:  #3a5a78;
+
+  --font-display: 'Graduate', 'Arial Black', sans-serif;
+  --font-ui:      system-ui, sans-serif;
+
+  --radius-lg: 20px;
+  --radius-md: 10px;
+  --radius-sm: 4px;
+}
+
+[hidden] { display: none !important; }
+
+body {
+  background: var(--blue-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 60px;
+  font-family: var(--font-display);
+}
+
+h1 {
+  color: var(--orange);
+  font-size: clamp(1.4rem, 5vw, 2.2rem);
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-family: var(--font-ui);
+  font-weight: 400;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+/* ── shirt canvas ─────────────────────────────────────────── */
+
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: 0 10px 48px rgb(0 0 0 / 55%);
+  margin-bottom: 28px;
+}
+
+canvas {
+  display: block;
+  width: min(480px, calc(100vw - 88px));
+  height: auto;
+  border-radius: var(--radius-sm);
+}
+
+/* ── controls ─────────────────────────────────────────────── */
+
+.controls {
+  width: min(480px, calc(100vw - 40px));
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.text-input {
+  width: 100%;
+  padding: 14px 18px;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  background: var(--input-bg);
+  border: 2.5px solid var(--orange);
+  border-radius: var(--radius-md);
+  color: #fff;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.text-input::placeholder {
+  color: var(--border-color);
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+.text-input:focus {
+  border-color: #ffaa50;
+}
+
+.btn-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 14px;
+  background: var(--orange);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: 0.07em;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+  box-shadow: 0 4px 20px rgb(245 132 38 / 35%);
+}
+
+.btn-download:hover  { background: var(--orange-dark); }
+.btn-download:active { transform: scale(0.97); }
+
+/* ── sound button ─────────────────────────────────────────── */
+
+.btn-sound {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--orange);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 40%);
+  transition: background 0.15s, transform 0.1s;
+  z-index: 100;
+}
+
+.btn-sound:hover  { background: var(--orange-dark); }
+.btn-sound:active { transform: scale(0.93); }
+
+.btn-sound svg {
+  width: 22px;
+  height: 22px;
+  fill: #fff;
+}
+
+/* ── footer ───────────────────────────────────────────────── */
+
+.footer {
+  margin-top: 20px;
+  color: var(--footer-text);
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.footer a {
+  color: var(--footer-link);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
